@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/ghosts"
+       android:layout_width="117dp"
+       android:layout_height="40dp"
+       android:layout_marginTop="108dp"
+       android:text="Ghosts"
+       android:textColor="#9A9A9A"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="@+id/ghostspfp"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="@+id/ghostspfp"
+       app:layout_constraintTop_toTopOf="@+id/ghostspfp" />
+
+   <TextView
+       android:id="@+id/leafy"
+       android:layout_width="117dp"
+       android:layout_height="36dp"
+       android:layout_marginTop="116dp"
+       android:text=" Leafy"
+       android:textColor="#587C25"
+       android:textSize="24sp"
+       android:textStyle="bold|italic"
+       app:layout_constraintEnd_toEndOf="@+id/leafypfp"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="@+id/leafypfp"
+       app:layout_constraintTop_toTopOf="@+id/leafypfp" />
+
+   <ImageView
+       android:id="@+id/ghostthree"
+       android:layout_width="72dp"
+       android:layout_height="81dp"
+       android:layout_marginTop="4dp"
+       app:layout_constraintEnd_toEndOf="@+id/lifebartwo"
+       app:layout_constraintTop_toBottomOf="@+id/lifebartwo"
+       app:srcCompat="@drawable/ghostone" />
+
+   <ImageView
+       android:id="@+id/ghostone"
+       android:layout_width="59dp"
+       android:layout_height="78dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="16dp"
+       app:layout_constraintBottom_toBottomOf="@+id/ghosttwo"
+       app:layout_constraintEnd_toStartOf="@+id/ghosttwo"
+       app:layout_constraintTop_toBottomOf="@+id/lifebartwo"
+       app:layout_constraintVertical_bias="1.0"
+       app:srcCompat="@drawable/ghosttwo" />
+
+   <ImageView
+       android:id="@+id/ghosttwo"
+       android:layout_width="76dp"
+       android:layout_height="69dp"
+       android:layout_marginTop="32dp"
+       android:layout_marginEnd="4dp"
+       app:layout_constraintBottom_toBottomOf="@+id/ghostthree"
+       app:layout_constraintEnd_toStartOf="@+id/ghostthree"
+       app:layout_constraintTop_toBottomOf="@+id/lifebartwo"
+       app:layout_constraintVertical_bias="1.0"
+       app:srcCompat="@drawable/ghostthree" />
+
+   <ProgressBar
+       android:id="@+id/lifebarone"
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="161dp"
+       android:layout_height="30dp"
+       android:layout_marginTop="148dp"
+       android:progressDrawable="@color/green"
+       android:progressTint="@color/green"
+       app:layout_constraintStart_toStartOf="@+id/leafypfp"
+       app:layout_constraintTop_toTopOf="@+id/leafypfp" />
+
+   <ProgressBar
+       android:id="@+id/lifebartwo"
+       style="?android:attr/progressBarStyleHorizontal"
+       android:layout_width="161dp"
+       android:layout_height="30dp"
+       android:layout_marginTop="136dp"
+       android:progressDrawable="@color/grayish"
+       app:layout_constraintEnd_toEndOf="@+id/ghostspfp"
+       app:layout_constraintTop_toTopOf="@+id/ghostspfp" />
+
+   <ImageView
+       android:id="@+id/leafypfp"
+       android:layout_width="115dp"
+       android:layout_height="111dp"
+       android:layout_marginStart="84dp"
+       android:layout_marginTop="4dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/pfpleaf" />
+
+   <ImageView
+       android:id="@+id/ghostspfp"
+       android:layout_width="115dp"
+       android:layout_height="111dp"
+       android:layout_marginTop="4dp"
+       android:layout_marginEnd="68dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:srcCompat="@drawable/ghostpfp" />
+
+   <ImageButton
+       android:id="@+id/leafone"
+       android:layout_width="53dp"
+       android:layout_height="48dp"
+       android:layout_marginTop="8dp"
+       android:background="#00FFFFFF"
+       app:layout_constraintStart_toStartOf="@+id/lifebarone"
+       app:layout_constraintTop_toBottomOf="@+id/lifebarone"
+       app:srcCompat="@drawable/leaftwo" />
+
+   <ImageButton
+       android:id="@+id/leaftwo"
+       android:layout_width="92dp"
+       android:layout_height="105dp"
+       android:layout_marginStart="4dp"
+       android:layout_marginTop="20dp"
+       android:background="#00FFFFFF"
+       app:layout_constraintBottom_toBottomOf="@+id/leafone"
+       app:layout_constraintStart_toEndOf="@+id/leafone"
+       app:layout_constraintTop_toBottomOf="@+id/lifebarone"
+       app:layout_constraintVertical_bias="0.565"
+       app:srcCompat="@drawable/leafy" />
+
+   <ImageButton
+       android:id="@+id/leafthree"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginBottom="40dp"
+       android:background="#00FFFFFF"
+       app:layout_constraintBottom_toBottomOf="@+id/leaftwo"
+       app:layout_constraintStart_toEndOf="@+id/leaftwo"
+       app:layout_constraintTop_toBottomOf="@+id/lifebarone"
+       app:layout_constraintVertical_bias="0.0"
+       app:srcCompat="@drawable/leafthree" />
+
+   <TextView
+       android:id="@+id/todo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="44dp"
+       android:text="Protect Your Home Against The Ghosts!"
+       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+       android:textColor="#777272"
+       android:textStyle="bold|italic"
+       app:layout_constraintBottom_toTopOf="@+id/changeturn"
+       app:layout_constraintEnd_toStartOf="@+id/ghostspfp"
+       app:layout_constraintHorizontal_bias="0.678"
+       app:layout_constraintStart_toEndOf="@+id/leafypfp" />
+
+   <Button
+       android:id="@+id/changeturn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="80dp"
+       android:text="next turn"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@+id/ghostspfp"
+       app:layout_constraintHorizontal_bias="0.788"
+       app:layout_constraintStart_toEndOf="@+id/leafypfp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.468" />
+
+   <TextView
+       android:id="@+id/maindps"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="16dp"
+       android:text="Main Dps"
+       android:textColor="#4CAF50"
+       app:layout_constraintStart_toEndOf="@+id/leafypfp"
+       tools:layout_editor_absoluteY="57dp" />
+
+   <TextView
+       android:id="@+id/enemy"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="8dp"
+       android:text="Enemy"
+       android:textColor="#E1C2C2"
+       app:layout_constraintEnd_toStartOf="@+id/ghostspfp"
+       tools:layout_editor_absoluteY="57dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
